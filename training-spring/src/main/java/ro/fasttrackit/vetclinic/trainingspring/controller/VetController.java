@@ -1,7 +1,6 @@
 package ro.fasttrackit.vetclinic.trainingspring.controller;
 
 import org.springframework.web.bind.annotation.*;
-import ro.fasttrackit.vetclinic.trainingspring.model.Pet;
 import ro.fasttrackit.vetclinic.trainingspring.model.Vet;
 import ro.fasttrackit.vetclinic.trainingspring.service.VetService;
 

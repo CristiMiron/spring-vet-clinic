@@ -2,7 +2,6 @@ package ro.fasttrackit.vetclinic.trainingspring.controller;
 
 import org.springframework.web.bind.annotation.*;
 import ro.fasttrackit.vetclinic.trainingspring.model.Owner;
-import ro.fasttrackit.vetclinic.trainingspring.model.Vet;
 import ro.fasttrackit.vetclinic.trainingspring.service.OwnerService;
 
 import java.util.List;

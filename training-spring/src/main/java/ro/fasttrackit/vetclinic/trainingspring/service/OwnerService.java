@@ -2,9 +2,7 @@ package ro.fasttrackit.vetclinic.trainingspring.service;
 
 import org.springframework.stereotype.Service;
 import ro.fasttrackit.vetclinic.trainingspring.model.Owner;
-import ro.fasttrackit.vetclinic.trainingspring.model.Vet;
 import ro.fasttrackit.vetclinic.trainingspring.model.entity.OwnerEntity;
-import ro.fasttrackit.vetclinic.trainingspring.model.entity.VetEntity;
 import ro.fasttrackit.vetclinic.trainingspring.repository.OwnerRepository;
 
 import java.util.List;

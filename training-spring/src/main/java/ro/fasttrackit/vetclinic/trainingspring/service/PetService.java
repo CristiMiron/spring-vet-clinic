@@ -2,7 +2,6 @@ package ro.fasttrackit.vetclinic.trainingspring.service;
 
 import org.springframework.stereotype.Service;
 import ro.fasttrackit.vetclinic.trainingspring.model.Pet;
-import ro.fasttrackit.vetclinic.trainingspring.model.Species;
 import ro.fasttrackit.vetclinic.trainingspring.model.entity.PetEntity;
 import ro.fasttrackit.vetclinic.trainingspring.repository.PetRepository;
 
