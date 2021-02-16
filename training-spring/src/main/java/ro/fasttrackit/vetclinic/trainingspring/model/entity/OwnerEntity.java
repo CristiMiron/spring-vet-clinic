@@ -13,18 +13,18 @@ public class OwnerEntity {
     @Column
     private String lastname;
     @Column
-    private String CNP;
+    private String cnp;
     @Column
     private String phoneNumber;
     @Column
     private String email;
 
-    public OwnerEntity(Long id,String firstname,String lastname,
-                       String CNP,String phoneNumber,String email){
+    public OwnerEntity(Long id, String firstname, String lastname,
+                       String cnp, String phoneNumber, String email){
         this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;
-        this.CNP = CNP;
+        this.cnp = cnp;
         this.phoneNumber = phoneNumber;
         this.email = email;
     }
@@ -57,12 +57,12 @@ public class OwnerEntity {
         this.lastname = lastname;
     }
 
-    public String getCNP() {
-        return CNP;
+    public String getCnp() {
+        return cnp;
     }
 
-    public void setCNP(String CNP) {
-        this.CNP = CNP;
+    public void setCnp(String cnp) {
+        this.cnp = cnp;
     }
 
     public String getPhoneNumber() {
@@ -87,7 +87,7 @@ public class OwnerEntity {
                 "id=" + id +
                 ", firstname='" + firstname + '\'' +
                 ", lastname='" + lastname + '\'' +
-                ", CNP='" + CNP + '\'' +
+                ", cnp='" + cnp + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", email='" + email + '\'' +
                 '}';

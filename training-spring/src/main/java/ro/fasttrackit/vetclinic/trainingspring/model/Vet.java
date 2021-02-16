@@ -3,11 +3,11 @@ package ro.fasttrackit.vetclinic.trainingspring.model;
 
 import java.util.Date;
 
-public class Vets {
+public class Vet {
     private Long id;
     private String firstname;
     private String lastname;
-    private String CNP;
+    private String cnp;
     private Date yearOfGraduation;
     private String specialization;
     private String phoneNumber;
@@ -37,12 +37,12 @@ public class Vets {
         this.lastname = lastname;
     }
 
-    public String getCNP() {
-        return CNP;
+    public String getCnp() {
+        return cnp;
     }
 
-    public void setCNP(String CNP) {
-        this.CNP = CNP;
+    public void setCnp(String cnp) {
+        this.cnp = cnp;
     }
 
     public Date getYearOfGraduation() {
@@ -79,11 +79,11 @@ public class Vets {
 
     @Override
     public String toString() {
-        return "Vets{" +
+        return "Vet{" +
                 "id=" + id +
                 ", firstname='" + firstname + '\'' +
                 ", lastname='" + lastname + '\'' +
-                ", CNP='" + CNP + '\'' +
+                ", cnp='" + cnp + '\'' +
                 ", yearOfGraduation=" + yearOfGraduation +
                 ", specialization='" + specialization + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +

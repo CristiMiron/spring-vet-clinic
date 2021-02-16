@@ -5,7 +5,7 @@ public class Owner {
     private Long id;
     private String firstname;
     private String lastname;
-    private String CNP;
+    private String cnp;
     private String phoneNumber;
     private String email;
 
@@ -33,12 +33,12 @@ public class Owner {
         this.lastname = lastname;
     }
 
-    public String getCNP() {
-        return CNP;
+    public String getCnp() {
+        return cnp;
     }
 
-    public void setCNP(String CNP) {
-        this.CNP = CNP;
+    public void setCnp(String cnp) {
+        this.cnp = cnp;
     }
 
     public String getPhoneNumber() {
@@ -63,7 +63,7 @@ public class Owner {
                 "id=" + id +
                 ", firstname='" + firstname + '\'' +
                 ", lastname='" + lastname + '\'' +
-                ", CNP='" + CNP + '\'' +
+                ", cnp='" + cnp + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", email='" + email + '\'' +
                 '}';

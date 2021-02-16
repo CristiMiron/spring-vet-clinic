@@ -2,6 +2,7 @@ package ro.fasttrackit.vetclinic.trainingspring.controller;
 
 import org.springframework.web.bind.annotation.*;
 import ro.fasttrackit.vetclinic.trainingspring.model.Owner;
+import ro.fasttrackit.vetclinic.trainingspring.model.Vet;
 import ro.fasttrackit.vetclinic.trainingspring.service.OwnerService;
 
 import java.util.List;
@@ -12,6 +13,11 @@ public class OwnerController {
     private final OwnerService service;
 
     public OwnerController(OwnerService injectedService){this.service = injectedService;}
+
+    @GetMapping("api/owner/{id}")
+    public Owner getOwnerById (@PathVariable("id") Long ownerId){
+        return service.getOwnerById(ownerId);
+    }
 
     @GetMapping("api/owner")
     public List<Owner> getAllOwners(){

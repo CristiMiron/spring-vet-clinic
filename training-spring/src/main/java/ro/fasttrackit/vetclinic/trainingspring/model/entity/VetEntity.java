@@ -3,8 +3,8 @@ package ro.fasttrackit.vetclinic.trainingspring.model.entity;
 import javax.persistence.*;
 import java.util.Date;
 
-@Entity(name = "vets")
-public class VetsEntity {
+@Entity(name = "vet")
+public class VetEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,7 +14,7 @@ public class VetsEntity {
     @Column
     private String lastname;
     @Column
-    private String CNP;
+    private String cnp;
     @Column
     private Date yearOfGraduation;
     @Column
@@ -24,19 +24,19 @@ public class VetsEntity {
     @Column
     private String email;
 
-    public VetsEntity(Long id,String firstname,String lastname,String CNP,Date yearOfGraduation,
-                      String specialization,String phoneNumber,String email){
+    public VetEntity(Long id, String firstname, String lastname, String cnp, Date yearOfGraduation,
+                     String specialization, String phoneNumber, String email){
         this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;
-        this.CNP = CNP;
+        this.cnp = cnp;
         this.yearOfGraduation = yearOfGraduation;
         this.specialization = specialization;
         this.phoneNumber = phoneNumber;
         this.email = email;
     }
 
-    public VetsEntity() {
+    public VetEntity() {
 
     }
 
@@ -64,12 +64,12 @@ public class VetsEntity {
         this.lastname = lastname;
     }
 
-    public String getCNP() {
-        return CNP;
+    public String getCnp() {
+        return cnp;
     }
 
-    public void setCNP(String CNP) {
-        this.CNP = CNP;
+    public void setCnp(String cnp) {
+        this.cnp = cnp;
     }
 
     public Date getYearOfGraduation() {
@@ -106,11 +106,11 @@ public class VetsEntity {
 
     @Override
     public String toString() {
-        return "VetsEntity{" +
+        return "VetEntity{" +
                 "id=" + id +
                 ", firstname='" + firstname + '\'' +
                 ", lastname='" + lastname + '\'' +
-                ", CNP='" + CNP + '\'' +
+                ", cnp='" + cnp + '\'' +
                 ", yearOfGraduation=" + yearOfGraduation +
                 ", specialization='" + specialization + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
